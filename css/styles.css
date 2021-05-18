@@ -83,3 +83,34 @@ p {
 a:visited {
   color: var(--color-dark);
 }
+
+/* Buttons */
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 5rem;
+  outline: 0;
+  padding: 2rem 4vw;
+  text-align: center;
+  white-space: nowrap;
+  transition: all 0.3s;
+  font-size: 2rem;
+}
+
+.btn--primary {
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.btn--primary:hover {
+  background: #fd7d7d;
+  color: #fff;
+}
+
+.btn--primary:visited {
+  color: #fff;
+}
