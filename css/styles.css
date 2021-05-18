@@ -12,6 +12,7 @@
 }
 
 /* Typography */
+
 ::selection {
   background: var(--color-primary);
   color: #fff;
@@ -64,4 +65,21 @@ p {
   h3 {
     font-size: 2.6rem;
   }
+}
+
+/* Links */
+
+.link {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: var(--color-primary);
+}
+
+a:visited {
+  color: var(--color-dark);
 }
