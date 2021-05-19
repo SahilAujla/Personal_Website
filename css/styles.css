@@ -43,7 +43,8 @@ h2 {
 }
 
 h3 {
-  margin: 1.2rem 0.8rem 1.2rem 1.9rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
   line-height: 1.36;
   font-size: 2.2rem;
   font-weight: bold;
@@ -63,6 +64,7 @@ p {
   }
 
   h3 {
+    margin-top: 0;
     font-size: 2.6rem;
   }
 }
@@ -113,4 +115,85 @@ a:visited {
 
 .btn--primary:visited {
   color: #fff;
+}
+
+/* Images */
+
+.my_image {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+/* Grids */
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Cards */
+
+.card {
+  width: 90fr;
+  background: rgb(255, 255, 255);
+  margin: auto;
+  padding: 1rem 2rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card--background {
+  background: #edf7fa;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card--background .header {
+  text-align: center;
+}
+
+.view {
+  display: none;
+}
+
+.container {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 86rem;
+    margin: auto;
+  }
+  .card--background {
+    padding: 2rem 14rem 2rem;
+  }
+
+  .card--background .header {
+    text-align: unset;
+  }
+
+  .card--paragraph {
+    font-size: 2.2rem;
+    display: inline-block;
+  }
+
+  .view {
+    color: var(--color-secondary);
+    font-size: 1.6rem;
+    display: inline-block;
+    position: absolute;
+    top: 0.25rem;
+    right: 0;
+  }
 }
