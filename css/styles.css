@@ -89,18 +89,17 @@ a:visited {
 /* Buttons */
 
 .btn {
-  border-radius: 40px;
-  border: 0;
+  border: 1;
   cursor: pointer;
   font-size: 1.8rem;
-  font-weight: 600;
-  margin: 5rem;
+  font-weight: 500;
   outline: 0;
-  padding: 2rem 4vw;
+  padding: 10px;
   text-align: center;
   white-space: nowrap;
   transition: all 0.3s;
-  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 7rem;
 }
 
 .btn--primary {
@@ -120,10 +119,37 @@ a:visited {
 /* Images */
 
 .my_image {
+  display: block;
   width: 18rem;
   height: 18rem;
   border-radius: 100%;
   object-fit: cover;
+  margin: auto;
+  box-shadow: -7px 7px 2px #edf7fa;
+}
+
+@media screen and (min-width: 768px) {
+  .my_image {
+    order: 2;
+    margin-top: 2.144rem;
+  }
+}
+
+.featured_image {
+  margin: auto;
+}
+
+/* Badges */
+
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0 2rem;
+  white-space: nowrap;
+  background: var(--color-dark);
+  color: #fff;
+  margin-bottom: 2.4rem;
 }
 
 /* Grids */
@@ -133,9 +159,32 @@ a:visited {
   gap: 2rem;
 }
 
+.grid--featured {
+  display: grid;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+}
+
+.grid--header {
+  display: grid;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+}
+
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--featured {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .grid--header {
+    display: grid;
+    grid-template-columns: 1fr auto;
   }
 }
 
@@ -158,7 +207,12 @@ a:visited {
   padding-right: 1rem;
 }
 
-.card--background .header {
+.card--heading {
+  margin-bottom: 0;
+  margin-top: 3rem;
+}
+
+.header {
   text-align: center;
 }
 
@@ -168,6 +222,8 @@ a:visited {
 
 .container {
   position: relative;
+  max-width: 90vw;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -179,7 +235,7 @@ a:visited {
     padding: 2rem 14rem 2rem;
   }
 
-  .card--background .header {
+  .header {
     text-align: unset;
   }
 
@@ -195,5 +251,159 @@ a:visited {
     position: absolute;
     top: 0.25rem;
     right: 0;
+  }
+}
+
+/* Featured Works */
+
+.featured--light {
+  opacity: 0.5;
+}
+
+.featured_para {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card--featured {
+    width: 90fr;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    padding: 0 2rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0;
+  }
+}
+
+/* footer */
+
+.flex {
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.footer-line {
+  margin: auto;
+}
+
+.flex-line {
+  padding-top: 0;
+}
+
+.flex-footer {
+  margin-top: 9rem;
+}
+
+/* Header */
+
+.header-para {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header-para {
+    text-align: unset;
+  }
+}
+
+/* Lists */
+.list {
+  list-style: none; /*to get rid of bullet points and the default left padding that all browsers apply to lists*/
+  padding-left: 0;
+}
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--dark {
+  fill: var(--color-dark);
+}
+
+/* Collapsibles */
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* Navigation Bar */
+.nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+  color: var(--color-dark);
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: var(--color-primary);
+}
+
+.nav__toggler {
+  opacity: 1;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  /* '.nav.collapsible--expanded' ensures that this style only gets applied to those elements which have nav class and as well as collapsible--expaneded class (so this style will only be applied to those a navigation bar which is expanded) */
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+}
+
+.nav__brand {
+  transform: translateY(5px);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: 0;
   }
 }
