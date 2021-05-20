@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hi, I am Sahil and this is my personal website"
+    />
+    <meta property="og:title" content="Sahil Aujla - Personal Website" />
+    <meta
+      property="og:description"
+      content="Hi, I am Sahil and this is my personal website"
+    />
+    <meta property="og:type" content="website" />
     <title>Sahil Aujla</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -17,7 +29,7 @@
         <svg class="icon icon--dark nav__toggler">
           <use href="images/sprite.svg#menu"></use>
         </svg>
-        <ul class="list nav__list collapsible__content">
+        <ul class="list nav__list collapsible__content" data-aos="fade-left">
           <li class="nav__item"><a class="link" href="#">Works</a></li>
           <li class="nav__item"><a class="link" href="#">Blog</a></li>
           <li class="nav__item"><a class="link" href="#">Contact</a></li>
@@ -28,12 +40,13 @@
       <div class="container">
         <div class="grid grid--1x2 grid--header">
           <img
-            src="images/my_image.jpeg"
+            data-aos="fade-down-left"
+            src="images/my_image.webp"
             alt="Sahil Aujla Image"
             class="my_image"
           />
-          <div class="header-para">
-            <h1>Hi, I am Sahil, Hobbyist&nbsp;Programmer</h1>
+          <div class="header-para" data-aos="fade-down-right">
+            <h1>Hi, I am Sahil, Hobbyist Programmer</h1>
             <p>
               This is my first personal website. I am still learning things.
               Hope you like it. Send me a feedback about this site by clicking
@@ -50,7 +63,7 @@
             <a href="#" class="link view">View all</a>
           </header>
           <div class="grid grid--1x2">
-            <div class="card">
+            <div class="card" data-aos="fade-right">
               <h3>Making a Design system from scratch</h3>
               <p>12 Feb 2020 &nbsp;|&nbsp; Design, Pattern</p>
               <p>
@@ -60,7 +73,7 @@
                 laudantium.
               </p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-left">
               <h3>Making a Design system from scratch</h3>
               <p>12 Feb 2020 &nbsp;|&nbsp; Design, Pattern</p>
               <p>
@@ -77,9 +90,9 @@
         <header class="header">
           <p class="card--heading">Featured Works</p>
         </header>
-        <div class="grid grid--1x2 grid--featured">
+        <div class="grid grid--1x2 grid--featured" data-aos="zoom-in">
           <img
-            src="images/featured_works.png"
+            src="images/featured_works.webp"
             alt="Featured Works Image"
             class="featured_image"
           />
@@ -94,9 +107,9 @@
             </p>
           </div>
         </div>
-        <div class="grid grid--1x2 grid--featured">
+        <div class="grid grid--1x2 grid--featured" data-aos="zoom-in">
           <img
-            src="images/featured_works.png"
+            src="images/featured_works.webp"
             alt="Featured Works Image"
             class="featured_image"
           />
@@ -113,7 +126,7 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer data-aos="fade-up">
       <div class="container flex-footer">
         <div class="flex">
           <svg
@@ -180,5 +193,9 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
