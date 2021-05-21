@@ -76,6 +76,10 @@ a {
   text-decoration: none;
 }
 
+.link--dark {
+  color: var(--color-dark);
+}
+
 .link--small {
   color: var(--color-secondary);
   font-size: inherit;
