@@ -4,17 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Hi, I am Sahil and this is my personal website"
-    />
-    <meta property="og:title" content="Sahil Aujla - Personal Website" />
-    <meta
-      property="og:description"
-      content="Hi, I am Sahil and this is my personal website"
-    />
-    <meta property="og:type" content="website" />
-    <title>Sahil Aujla</title>
+    <title>Blog-Sahil Aujla</title>
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -22,7 +12,7 @@
   </head>
   <body>
     <header>
-      <nav class="nav collapsible">
+      <nav class="nav collapsible" data-aos="slide-left">
         <a aria-label="Sahil Aujla" href="/"> </a>
         <svg class="icon icon--dark nav__toggler">
           <use href="images/sprite.svg#menu"></use>
@@ -37,138 +27,60 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <div class="container">
-        <div class="grid grid--1x2 grid--header">
+      <div class="container blog--card">
+        <h1>Work</h1>
+        <div class="grid grid--1x2 grid--featured" data-aos="slide-right">
           <img
-            data-aos="fade-down-left"
-            src="images/my_image.webp"
-            alt="Sahil Aujla Image"
-            class="my_image"
+            src="images/moshify.png"
+            alt="Featured Works Image"
+            class="featured_image"
           />
-          <div class="header-para" data-aos="fade-down-right">
-            <h1>Hi, I am Sahil, Hobbyist Programmer</h1>
-            <p>
-              This is my first personal website. I am still learning things.
-              Hope you like it. Send me a feedback about this site by clicking
-              on the button below.
+          <div class="card card--featured card--works">
+            <h3 class="featured_heading">
+              Making a cloud hosting website from scratch
+            </h3>
+            <span class="badge">2021</span> &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="featured--light">Web development</span>
+            <p class="featured_para">
+              This website named "Moshify" was my first web development project.
+              It took me a lot of time to make this website and its design. It
+              is a fully responsive website
+              <a href="https://aujla.netlify.app/" target="_blank"
+                ><span class="link--small">Click Here</span></a
+              >
+              to check it out
             </p>
-            <a href="form.html" class="link btn btn--primary btn--top"
-              >Send Me a Message</a
-            >
           </div>
         </div>
-      </div>
-      <div class="container quote--container">
-        <blockquote class="quote">
-          <p class="quote__text">
-            Be consistent like a watch, don't stop until the cells are working.
-          </p>
-          <footer>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary quote__line">
-                  <use href="images/sprite.svg#line"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title quote__author">- Sahil Aujla</h3>
-              </div>
-            </div>
-          </footer>
-        </blockquote>
-      </div>
-      <div class="card--background">
-        <div class="container">
-          <header class="header">
-            <p class="card--paragraph">Recent Posts</p>
-            <a href="blog.html" class="link view">View all</a>
-          </header>
-          <div class="grid grid--1x2">
-            <a href="blog.html">
-              <div class="card" data-aos="slide-right">
-                <h3>How I fell in love with programming</h3>
-                <p>21 May 2021 &nbsp;|&nbsp; Story</p>
-                <p>
-                  It was the end of 11th class, and my IT paper was about to
-                  arrive. I wasn't prepard for it at all. But then due to corona
-                  the paper was postponed and I was sent from school(residential
-                  setup) to home. I came home and thought to myself that I will
-                  have to study for IT exam because before that...<span
-                    class="link--small"
-                    >Read More</span
-                  >
-                </p>
-              </div>
-            </a>
-            <a href="blog.html">
-              <div class="card" data-aos="slide-left">
-                <h3>The importance of doing what you love</h3>
-                <p>20 May 2021 &nbsp;|&nbsp; Life Lesson</p>
-                <p>
-                  I have always been of the view that you should do what you
-                  love. But this thing lacks in our society. People often run
-                  after money. They would take a job that they hate for a little
-                  more money instead of taking one which they love. According to
-                  a research we spend 70% of our lifetime during work...<span
-                    class="link--small"
-                    >Read More</span
-                  >
-                </p>
-              </div>
-            </a>
+
+        <div class="grid grid--1x2 grid--featured" data-aos="slide-left">
+          <img
+            src="images/instagram.webp"
+            alt="Featured Works Image"
+            class="featured_image"
+          />
+          <div class="card card--featured card--works">
+            <h3 class="featured_heading">Designing Instagram</h3>
+            <span class="badge">2020</span> &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="featured--light">App Design</span>
+            <p class="featured_para">
+              This is the complete instagram design I created using figma.I
+              built it from scratch and if you want to play with the prototype
+              you can
+              <a
+                href="https://www.figma.com/proto/mPQwGHHH6Cs1hRikASBrZ1/Instagram-for-J?node-id=1%3A1876&scaling=scale-down"
+                target="_blank"
+                ><span class="link--small">Click Here</span></a
+              >
+              to check it out
+            </p>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <header class="header">
-          <p class="card--heading">Featured Works</p>
-        </header>
-        <a href="works.html">
-          <div class="grid grid--1x2 grid--featured" data-aos="zoom-in">
-            <img
-              src="images/moshify.png"
-              alt="Featured Works Image"
-              class="featured_image"
-            />
-            <div class="card card--featured">
-              <h3 class="featured_heading">
-                Making a cloud hosting website from scratch
-              </h3>
-              <span class="badge">2021</span> &nbsp;&nbsp;&nbsp;&nbsp;
-              <span class="featured--light">Web Development</span>
-              <p class="featured_para">
-                This website named "Moshify" was my first web development
-                project. It took me a lot of time to make this website and its
-                design. It is a fully responsive website...<span
-                  class="link--small"
-                  >Read More</span
-                >
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="works.html">
-          <div class="grid grid--1x2 grid--featured" data-aos="zoom-in">
-            <img
-              src="images/instagram.webp"
-              alt="Featured Works Image"
-              class="featured_image"
-            />
-            <div class="card card--featured">
-              <h3 class="featured_heading">Designing Instagram</h3>
-              <span class="badge">2020</span> &nbsp;&nbsp;&nbsp;&nbsp;
-              <span class="featured--light">App Design</span>
-              <p class="featured_para">
-                This is the complete instagram design I created using figma.I
-                built it from scratch and I you want to play with the
-                prototype...<span class="link--small">Read More</span>
-              </p>
-            </div>
-          </div>
-        </a>
       </div>
     </main>
+
     <footer data-aos="fade-up">
       <div class="container flex-footer">
         <div class="flex">
