@@ -437,6 +437,7 @@ label {
 }
 
 input[type="text"],
+input[type="email"],
 textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -445,6 +446,7 @@ textarea {
 }
 
 input[type="text"]:focus,
+input[type="email"]:focus,
 textarea:focus {
   border-color: #7db0fb;
   outline: 0;
