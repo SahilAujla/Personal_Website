@@ -16,7 +16,6 @@
     <meta property="og:type" content="website" />
     <title>Sahil Aujla</title>
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -28,11 +27,19 @@
           <use href="images/sprite.svg#menu"></use>
         </svg>
         <ul class="list nav__list collapsible__content" data-aos="fade-left">
-          <li class="nav__item"><a class="link" href="/">Home</a></li>
-          <li class="nav__item"><a class="link" href="works.html">Works</a></li>
-          <li class="nav__item"><a class="link" href="blog.html">Blog</a></li>
           <li class="nav__item">
-            <a class="link" href="form.html">Contact</a>
+            <a aria-label="home" class="link" href="/">Home</a>
+          </li>
+          <li class="nav__item">
+            <a aria-label="works" class="link" href="works.html">Works</a>
+          </li>
+          <li class="nav__item">
+            <a aria-label="blog" class="link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a aria-label="send message" class="link" href="form.html"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -53,7 +60,10 @@
               Hope you like it. Send me a feedback about this site by clicking
               on the button below.
             </p>
-            <a href="form.html" class="link btn btn--primary btn--top"
+            <a
+              href="form.html"
+              aria-label="send message"
+              class="link btn btn--primary btn--top"
               >Send Me a Message</a
             >
           </div>
@@ -72,9 +82,9 @@
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title quote__author" data-aos="slide-left">
+                <h2 class="media__title quote__author" data-aos="slide-left">
                   - Sahil Aujla
-                </h3>
+                </h2>
               </div>
             </div>
           </footer>
@@ -84,10 +94,10 @@
         <div class="container">
           <header class="header">
             <p class="card--paragraph">Recent Posts</p>
-            <a href="blog.html" class="link view">View all</a>
+            <a href="blog.html" aria-label="blog" class="link view">View all</a>
           </header>
           <div class="grid grid--1x2">
-            <a href="blog.html" class="link--dark">
+            <a href="blog.html" aria-label="blog" class="link--dark">
               <div class="card" data-aos="slide-right">
                 <h3>How I fell in love with programming</h3>
                 <p>21 May 2021 &nbsp;|&nbsp; Story</p>
@@ -103,7 +113,7 @@
                 </p>
               </div>
             </a>
-            <a href="blog.html" class="link--dark">
+            <a href="blog.html" aria-label="blog" class="link--dark">
               <div class="card" data-aos="slide-left">
                 <h3>The importance of doing what you love</h3>
                 <p>20 May 2021 &nbsp;|&nbsp; Life Lesson</p>
@@ -126,10 +136,10 @@
         <header class="header">
           <p class="card--heading">Featured Works</p>
         </header>
-        <a href="works.html" class="link--dark">
+        <a href="works.html" aria-label="works" class="link--dark">
           <div class="grid grid--1x2 grid--featured" data-aos="zoom-in">
             <img
-              src="images/moshify.png"
+              src="images/moshify.webp"
               alt="Featured Works Image"
               class="featured_image"
             />
@@ -150,7 +160,7 @@
             </div>
           </div>
         </a>
-        <a href="works.html" class="link--dark">
+        <a href="works.html" aria-label="works" class="link--dark">
           <div class="grid grid--1x2 grid--featured" data-aos="zoom-in">
             <img
               src="images/instagram.webp"
@@ -174,7 +184,10 @@
     <footer data-aos="fade-up">
       <div class="container flex-footer">
         <div class="flex">
-          <a href="https://www.facebook.com/sahil.jatt.1671">
+          <a
+            href="https://www.facebook.com/sahil.jatt.1671"
+            aria-label="facebook"
+          >
             <svg
               width="30"
               height="30"
@@ -188,7 +201,10 @@
               />
             </svg>
           </a>
-          <a href="https://www.instagram.com/s_aujla2213/">
+          <a
+            href="https://www.instagram.com/s_aujla2213/"
+            aria-label="instagram"
+          >
             <svg
               width="30"
               height="30"
@@ -210,7 +226,10 @@
               />
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/sahil-aujla-826ab7211/">
+          <a
+            href="https://www.linkedin.com/in/sahil-aujla-826ab7211/"
+            aria-label="linkedin"
+          >
             <svg
               width="30"
               height="30"
@@ -224,7 +243,7 @@
               />
             </svg>
           </a>
-          <a href="https://twitter.com/programmer2213">
+          <a href="https://twitter.com/programmer2213" aria-label="twitter">
             <svg
               width="37"
               height="30"
